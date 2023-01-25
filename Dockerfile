@@ -4,3 +4,5 @@ WORKDIR /app
 ADD main.py /app
 
 ENTRYPOINT ["python3", "/app/main.py"]
+
+
