@@ -2,9 +2,6 @@
 This repository is a demo of a working Jenkins server that has a job that is 
 triggered on any Merge Request (Pull Request) made on this repo.  
   
-The docker image that runs this Jenkins server was already built and made available 
-on DockerHub, to make running this demo easier.  
-  
 The application code can be found in the root of this repository, and the code to run 
 the Jenkins server can be found under the `jenkins-server` directory.
 
