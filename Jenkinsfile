@@ -1,9 +1,12 @@
 pipeline {
-    agent { dockerfile true }
+    agent any
     stages {
         stage('Run python') {
             steps {
-                sh 'python3 main.py'
+                sh '
+                  docker build -t my-app:latest .
+                  docker run my-app:latest
+                '
             }
         }
     }
