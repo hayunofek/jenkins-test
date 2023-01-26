@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage('Run python') {
             steps {
-                sh '
+                sh '''
                   docker build -t my-app:latest .
                   docker run my-app:latest
-                '
+                '''
             }
         }
     }
