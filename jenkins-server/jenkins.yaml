@@ -2,12 +2,12 @@ credentials:
   system:
     domainCredentials:
     - credentials:
-      - usernamePassword:
-          description: "3"
-          id: "3"
-          password: "{AQAAABAAAAAwolGxDM5i8VJpqV2zRpjwyw6nQSxsj4oxgIOxWxzDeJWODqOtOm0KkbGDQf7NWCP+SrRTB0FodWhMJH3Rx0y1WA==}"
-          scope: GLOBAL
-          username: "hayunofek@protonmail.com"
+      #- usernamePassword:
+      #    description: "3"
+      #    id: "3"
+      #    password: ""
+      #    scope: GLOBAL
+      #    username: "hayunofek@protonmail.com"
       - string:
           description: "5"
           id: "5"
@@ -155,7 +155,7 @@ jobs:
           branchSources {
             github {
               id('1') // IMPORTANT: use a constant and unique identifier
-              scanCredentialsId('3')
+              scanCredentialsId('5')
               repoOwner('hayunofek')
               repository('jenkins-test')
 
