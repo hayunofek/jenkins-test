@@ -16,6 +16,10 @@ You can run this Jenkins server locally. In order to run it, you need to have so
   
 Once you have those installed, please run the following command:  
 ```cd jenkins-server/ && docker build -t jenkins:jcasc --build-arg DOCKER_GID=$(cat /etc/group | grep '^docker:' | cut -d ':' -f 3) . && docker run -v /var/run/docker.sock:/var/run/docker.sock:rw --name jenkins --rm -p 8080:8080 --env JENKINS_ADMIN_PASSWORD=password jenkins:jcasc```  
+
+The credentials are:  
+username: `admin`  
+password: `password`    
   
 After you run the above command, which builds the Jenkins server locally on your computer, and then runs it, 
 you should have the Jenkins server available at `http://localhost:8080`, with a job named `configuration-as-code` 
